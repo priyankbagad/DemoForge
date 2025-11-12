@@ -10,10 +10,14 @@ const app = express();
 
 // CORS: update origin to your Netlify domain after deploy
 app.use(cors({
-  origin: ["http://localhost:5173"], // e.g., "https://your-site.netlify.app"
+  origin: [
+    "http://localhost:5173",
+    "https://magical-cannoli.netlify.app"   // 👈 your live site
+  ],
   methods: ["GET","POST","OPTIONS"],
   allowedHeaders: ["Content-Type","Authorization","x-demo-pass"]
 }));
+
 
 app.use(express.json({ limit: "1mb" }));
 
