@@ -1,2 +1,3 @@
 /api/*    https://demoforge.onrender.com/api/:splat   200
 /health   https://demoforge.onrender.com/health       200
+/*        /index.html                                 200

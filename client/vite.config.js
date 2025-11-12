@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/api': 'https://demoforge.onrender.com',
-      '/health': 'https://demoforge.onrender.com',
+      '/api': { target: 'https://demoforge.onrender.com', changeOrigin: true },
+      '/health': { target: 'https://demoforge.onrender.com', changeOrigin: true },
     },
   },
 })
